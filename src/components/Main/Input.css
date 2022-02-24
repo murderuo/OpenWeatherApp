@@ -1,0 +1,11 @@
+table.blueTable_center {
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
+  width: 800px;
+  height: 100px;
+  text-align: center;
+}
+table.blueTable_center td,
+table.blueTable_center th {
+  padding: 3px 2px;
+}
