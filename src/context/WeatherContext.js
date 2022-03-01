@@ -10,8 +10,8 @@ const WeatherProvider = ({ children }) => {
   const { locationVal } = useLocation();
   const [daysData, setDaysData] = useState([]);
 
-  useEffect(async () => {
-    await axios(
+  useEffect( () => {
+     axios(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${locationVal.lat}&lon=${locationVal.lon}&exclude=${part}&appid=73ceac06c2da544ef69bcd3b96e3dc03&units=metric&lang=tr`,
     ).then(response => setDaysData(response.data.daily));
   }, [locationVal]);
