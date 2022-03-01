@@ -12,8 +12,8 @@ const LocationProvider = ({ children }) => {
     country: 'TR',
   });
   //   const values={}
-  useEffect(async () => {
-    await axios(
+  useEffect( () => {
+     axios(
       `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=73ceac06c2da544ef69bcd3b96e3dc03`,
     ).then(response => {
       if (
