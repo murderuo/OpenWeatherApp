@@ -14,7 +14,7 @@ const LocationProvider = ({ children }) => {
   //   const values={}
   useEffect( () => {
      axios(
-      `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=73ceac06c2da544ef69bcd3b96e3dc03`,
+      `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=ec7d1c0e712571e97e77329fca7e15f3`,
     ).then(response => {
       if (
         response.data.length > 0 &&
