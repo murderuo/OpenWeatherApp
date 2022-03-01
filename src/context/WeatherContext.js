@@ -12,7 +12,7 @@ const WeatherProvider = ({ children }) => {
 
   useEffect( () => {
      axios(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${locationVal.lat}&lon=${locationVal.lon}&exclude=${part}&appid=73ceac06c2da544ef69bcd3b96e3dc03&units=metric&lang=tr`,
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${locationVal.lat}&lon=${locationVal.lon}&exclude=${part}&appid=ec7d1c0e712571e97e77329fca7e15f3&units=metric&lang=tr`,
     ).then(response => setDaysData(response.data.daily));
   }, [locationVal]);
 
