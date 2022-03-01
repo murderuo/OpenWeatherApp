@@ -29,7 +29,7 @@ const LocationProvider = ({ children }) => {
         });
       }
     });
-  }, [location]);
+  }, [location,locationVal]);
 
   const values = { location, setLocation, locationVal, setLocationVal };
 
